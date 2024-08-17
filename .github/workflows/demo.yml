@@ -1,1 +1,16 @@
+name: Hello World CI
+
+# Trigger the workflow on any push to the main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Say Hello World
+      run: echo "Hello, World!"
 
